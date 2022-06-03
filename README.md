@@ -4,7 +4,7 @@
 
 Download this script:
 ```shell
-wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/argo-tunnel-script/master/argo.sh
+wget -N --no-check-certificate https://raw.githubusercontents.com/yuuki410/argo-tunnel-script/master/argo.sh
 ```
 
 Run this script:
