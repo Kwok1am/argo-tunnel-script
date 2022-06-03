@@ -54,10 +54,7 @@ checkStatus() {
 installCloudFlared() {
 	wget -N https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-$cpuArch
 	mv cloudflared-linux-$cpuArch /usr/bin/cloudflared
-	if [[ $loginStatus=="Unlogined" ]] ; then
-	    green "Please open the fllow link in your boweser and login your account:"
-	    cloudflared tunnel login
-	fi
+	[[ $loginStatus=="Unlogined" ]] && green "Please open the fllow link in your boweser and login your account:" && cloudflared tunnel login
 	back2menu
 }
 
