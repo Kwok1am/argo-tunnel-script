@@ -63,7 +63,7 @@ installCloudFlared() {
 
 uninstallCloudFlared() {
 	[ $cloudflaredStatus == "Uninstalled" ] && red "You haven'tinstalled Cloudflared client" && exit 1
-	${PACKAGE_REMOVE[int]} cloudflared
+	rm -f /usr/bin/cloudflared
 	rm -rf /root/.cloudflared
 	green "CloudFlared client uninstalled sucessfully!"
 }
